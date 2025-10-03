@@ -109,7 +109,9 @@ h1 {
 .site-logo {
   height: 40px;
   width: auto;
+  max-width: 120px;
   display: block;
+  object-fit: contain;
 }
 
 /* Increase nav top and right margin */
