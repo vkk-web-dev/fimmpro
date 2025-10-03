@@ -32,6 +32,9 @@ header, main, footer {
 
 header {
   border-bottom: 1px solid #eee;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 footer {
@@ -100,6 +103,20 @@ h1 {
   .site-nav a {
     padding: 0.5rem 0.6rem;
   }
+}
+
+/* Logo */
+.site-logo {
+  height: 40px;
+  width: auto;
+  display: block;
+}
+
+/* Increase nav top and right margin */
+.site-nav {
+  margin-top: 0.75rem;
+  margin-right: 1.25rem;
+  background-color: #ffffff;
 }
 
 /* Medium screens */
