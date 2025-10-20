@@ -34,8 +34,10 @@ header {
   border-bottom: 1px solid #eee;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   min-height: 60px;
+  flex-direction: column;
+  gap: 0.75rem;
 }
 
 footer {
@@ -51,14 +53,14 @@ h1 {
 /* Header navigation */
 .site-nav {
   background-color: #ffffff;
-  margin-right: 1.25rem;
+  margin: 0;
 }
 .site-nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   width: 100%;
   gap: 1rem;
 }
@@ -105,6 +107,14 @@ h1 {
   .site-nav a {
     padding: 0.5rem 0.6rem;
   }
+
+  .header-banner {
+    gap: 0.75rem;
+    padding: 0.5rem 0.75rem;
+  }
+  .hb-arrow {
+    width: 20px;
+  }
 }
 
 /* Logo */
@@ -114,6 +124,43 @@ h1 {
   max-width: 120px;
   display: block;
   object-fit: contain;
+}
+
+/* Header banner: insights → action → impact */
+.header-banner {
+  width: 100%;
+  background-color: #1f6d5c; /* main green */
+  color: #ffffff; /* white */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem;
+  padding: 0.6rem 1rem;
+}
+
+.hb-word {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+
+.hb-arrow {
+  position: relative;
+  width: 26px;
+  height: 2px;
+  background: #ffffff; /* white line */
+}
+
+.hb-arrow::after {
+  content: "";
+  position: absolute;
+  right: -3px;
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+  width: 8px;
+  height: 8px;
+  border-right: 2px solid #ffffff; /* white arrow head */
+  border-top: 2px solid #ffffff;
 }
 
 
